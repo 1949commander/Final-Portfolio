@@ -127,12 +127,12 @@ body.fade-out {
 }
 
 @-webkit-keyframes fade { /* added 4/23/2020 */
-	form {opacity: .4}
+	from {opacity: .4}
 	to {opacity: 1}
 }
 
 @keyframes fade { /* added 4/23/2020 */
-	form {opacity: .4}
+	from {opacity: .4}
 	to {opacity: 1}
 }
 

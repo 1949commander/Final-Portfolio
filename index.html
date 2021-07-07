@@ -31,157 +31,191 @@
     <a href="#Slideshow">Slideshow</a> <!-- Added 4/23/2020-->
     <a href="#About">About</a>
     <a href="#GitHub">GitHub</a>
+    <a href="#LinkedIn">LinkedIn</a>
     <a onclick="openForm()">Contact</a> <!--Opens popup Contact Form Added 4/23/2020-->
 </div>
 
 <!--This allows pop up form to collapse when you click outside the form-->
 <div class="btn cancel" onclick="closeForm()">
 
-<!-- Home -->
-    <div id="Home">
+  <!-- Home -->
+  <div id="Home">
     <br> <!-- Breaks inserted to add space between navbar and first heading -->
     <br>
 
     <!-- Video -->
-    
-        <video autoplay muted loop id="Typing_Video"> <!-- Makes the video play automatically, on a loop and with no sound -->
-            <source src="Stylesheet/Video/Typing.mp4" type="video/mp4">
-            Your browser does not support HTML5 video. <!-- Display message if video fails to run -->
-        </video>
-    </div>
-    <!-- Video text --> 
-    <div class="Video_Text"> 
-        <h1 style="color:lightsteelblue;">Brian A. Reeves Portfolio</h1>
-            <p> 
-                <strong>
-                    <center>
-                        <q>The computer programmer is a creator of universes for which he alone is the lawgiver.
-                        <br>No playwright, no stage director, no emperor, however powerful, has ever exercised such absolute authority to arrange a stage or
-                        <br>field of battle and to command such unswervingly dutiful actors or troops.
-                        </q>	
-                        <br>-Joseph Weizenbaum<br>
-                        <br>
-                        My name is Brian A. Reeves. Welcome to my portfolio website. On it, I will tell you about my background and experience.<br>
-                        <br>Thank you for stopping by and enjoy! 
-                    </center>	
-                </strong>
-            </p> 
-    </div>
 
-<!--Slide Show Section added 4/23/2020-->
-    <div id="Slideshow">
-        <div id="Slideshow_Background">
-            <div id="Slideshow_Container">
+    <video autoplay muted loop id="Typing_Video">
+      <!-- Makes the video play automatically, on a loop and with no sound -->
+      <source src="Stylesheet/Video/Typing.mp4" type="video/mp4">
+      Your browser does not support HTML5 video. <!-- Display message if video fails to run -->
+    </video>
+  </div>
+  <!-- Video text -->
+  <div class="Video_Text">
+    <h1 style="color:lightsteelblue;">Brian A. Reeves Portfolio</h1>
+    <p>
+      
+        <center>
+          <strong>
+            <q>
+              The computer programmer is a creator of universes for which he alone is the lawgiver.
+              <br>No playwright, no stage director, no emperor, however powerful, has ever exercised such absolute authority to arrange a stage or
+              <br>field of battle and to command such unswervingly dutiful actors or troops.
+            </q>
+            <br>-Joseph Weizenbaum<br>
+            <br>
+            My name is Brian A. Reeves. Welcome to my portfolio website. On it, I will tell you about my background and experience.<br>
+            <br>Thank you for stopping by and enjoy!
+          </strong>
+        </center>
+      
+    </p>
+  </div>
 
-                <div class="mySlides fade">
-                    <div class="Slide_Number">1 / 6</div>
-                    <img class="Slide_Show_Images" src="./Stylesheet/Images/profile_photo_sm_blk.jpeg" alt="Photo" style="width: 100%">
-                    <div class="text">I'm available to assist you on your project!</div>
-                </div>
+  <!--Slide Show Section added 4/23/2020-->
+  <div id="Slideshow">
+    <div id="Slideshow_Background">
+      <div id="Slideshow_Container">
 
-                <div class="mySlides fade">
-                    <div class="Slide_Number">2 / 6</div>
-                    <img class="Slide_Show_Images" src="./Stylesheet/Images/HTML_CSS_and_JavaScript.jpeg" alt="Picture" style="width: 100%">
-                    <div class="text">Full-stack software developer....<br></div>
-                </div>
-
-                <div class="mySlides fade">
-                    <div class="Slide_Number">3 / 6</div>
-                      <img class="Slide_Show_Images" src="Stylesheet/Images/Python.png" style="width:100%">
-                        <div class="text">the popular programming language Python,</div>
-                  </div>
-          
-                  <div class="mySlides fade">
-                    <div class="Slide_Number">4 / 6</div>
-                      <img class="Slide_Show_Images" src="Stylesheet/Images/C_Sharp_and_Dot_NET.png" style="width:100%">
-                        <div class="text">C#, .NET Framework, ASP.NET, MVC,</div>
-                  </div>
-          
-                  <div class="mySlides fade">
-                    <div class="Slide_Number">5 / 6</div>
-                      <img class="Slide_Show_Images" src="Stylesheet/Images/SQL_and_Database.jpg" style="width:100%">
-                        <div class="text">back end development, databases and SQL.</div>
-                      </div>
-          
-                  <div class="mySlides fade">
-                    <div class="Slide_Number">6 / 6</div>
-                      <img class="Slide_Show_Images" src="Stylesheet/Images/Coding_1.jpg" style="width:100%">
-                        <div class="text"> 
-                          <a onclick="openForm()" href="#Contact" style="color:white;">Contact me now!</a>
-                        </div>
-                  </div>
-
-                <a class="Previous" onclick="plusSlides(-1)">&#10094;</a>
-		        <a class="Next" onclick="plusSlides(1)">&#10095;</a>
-
-            </div>
-    <br>
-
-            <div style="text-align:center">
-    
-                <span class="dot" onclick="currentSlide(1)"></span> 
-                <span class="dot" onclick="currentSlide(2)"></span> 
-                <span class="dot" onclick="currentSlide(3)"></span> 
-                <span class="dot" onclick="currentSlide(4)"></span> 
-                <span class="dot" onclick="currentSlide(5)"></span> 
-                <span class="dot" onclick="currentSlide(6)"></span> 
-
-            </div>
+        <div class="mySlides fade">
+          <div class="Slide_Number">1 / 6</div>
+          <img class="Slide_Show_Images" src="./Stylesheet/Images/profile_photo_sm_blk.jpeg" alt="Photo" style="width: 100%">
+          <div class="text">I'm available to assist you on your project!</div>
         </div>
-    </div>
 
-<!-- this function covers the slideshow, presented within the HTML for priority reasons added 4/23/2020 -->
-<script>
+        <div class="mySlides fade">
+          <div class="Slide_Number">2 / 6</div>
+          <img class="Slide_Show_Images" src="./Stylesheet/Images/HTML_CSS_and_JavaScript.jpeg" alt="Picture" style="width: 100%">
+          <div class="text">Full-stack software developer....<br></div>
+        </div>
+
+        <div class="mySlides fade">
+          <div class="Slide_Number">3 / 6</div>
+          <img class="Slide_Show_Images" src="Stylesheet/Images/Python.png" style="width:100%">
+          <div class="text">the popular programming language Python,</div>
+        </div>
+
+        <div class="mySlides fade">
+          <div class="Slide_Number">4 / 6</div>
+          <img class="Slide_Show_Images" src="Stylesheet/Images/C_Sharp_and_Dot_NET.png" style="width:100%">
+          <div class="text">C#, .NET Framework, ASP.NET, MVC,</div>
+        </div>
+
+        <div class="mySlides fade">
+          <div class="Slide_Number">5 / 6</div>
+          <img class="Slide_Show_Images" src="Stylesheet/Images/SQL_and_Database.jpg" style="width:100%">
+          <div class="text">back end development, databases and SQL.</div>
+        </div>
+
+        <div class="mySlides fade">
+          <div class="Slide_Number">6 / 6</div>
+          <img class="Slide_Show_Images" src="Stylesheet/Images/Coding_1.jpg" style="width:100%">
+          <div class="text">
+            <a onclick="openForm()" href="#Contact" style="color:white;">Contact me now!</a>
+          </div>
+        </div>
+
+        <a class="Previous" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="Next" onclick="plusSlides(1)">&#10095;</a>
+
+      </div>
+      <br>
+
+      <div style="text-align:center">
+
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+        <span class="dot" onclick="currentSlide(5)"></span>
+        <span class="dot" onclick="currentSlide(6)"></span>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- this function covers the slideshow, presented within the HTML for priority reasons added 4/23/2020 -->
+  <script>
     var slideIndex = 1;
-	  showSlides(slideIndex);
-	function plusSlides(n) {
-	  showSlides(slideIndex += n);
-	}
-	function currentSlide(n) {
-	  showSlides(slideIndex = n);
-	}
-	function showSlides(n) {
-	  var i;
-	  var slides = document.getElementsByClassName("mySlides");
-	  var dots = document.getElementsByClassName("dot");
-		if (n > slides.length) {slideIndex = 1}    
-		if (n < 1) {slideIndex = slides.length}
-		  for (i = 0; i < slides.length; i++) {
-		  slides[i].style.display = "none";  
-		  }
-		  for (i = 0; i < dots.length; i++) {
-			dots[i].className = dots[i].className.replace(" active", "");
-		  }
-	  slides[slideIndex-1].style.display = "block";  
-	  dots[slideIndex-1].className += " active";
-	}
+    showSlides(slideIndex);
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+    function showSlides(n) {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("dot");
+      if (n > slides.length) { slideIndex = 1 }
+      if (n < 1) { slideIndex = slides.length }
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex - 1].style.display = "block";
+      dots[slideIndex - 1].className += " active";
+    }
   </script>
 
-    <!-- About section -->
-    <div class="Row" id="About"> 
-        <div class="Column_2"> <!-- Left column -->
-            <img src="Stylesheet/Images/Development.jpg" alt="Laptop">
-        </div>
-
-        <div class="Column_1"> <!-- Right column -->
-            <h1>About</h1>
-                <p>I am a software developer who loves to code! I have varied interests such as traveling, nature and antique automobiles. <br><br>I am a graduate of <a href="https://www.learncodinganywhere.com" target="_blank">The Tech Academy’s</a> Software Developer Boot Camp. Experienced in the following programming languages and web development tools: Python, C#, JavaScript, SQL, Django, HTML, CSS, .NET, and more. <br><br>I am a full-stack developer and would love to work with you on your project. <a href="#Contact">Contact</a> me below!</p>
-        </div>
+  <!-- About section -->
+  <div class="Row" id="About">
+    <div class="Column_2">
+      <!-- Left column -->
+      <img src="Stylesheet/Images/Development.jpg" alt="Laptop">
     </div>
 
-    <!-- GitHub section -->
-    <div class="Row" id="GitHub">
-        <div class="Column_1"> <!-- Left column -->
-            <h1>GitHub</h1>
-                <p>You can view my coding projects on my GitHub profile here:<br>
-                <center><a href="https://github.com/1949commander" target="_blank">Brian Reeves GitHub</a></center></p>
-        </div>
-        
-        <div class="Column_2"> <!-- Right column -->
-            <a href="https://github.com/1949commander" target="_blank"><img src="Stylesheet/Images/GitHub.png" alt="GitHub"></a>
-        </div>
+    <div class="Column_1">
+      <!-- Right column -->
+      <h1>About</h1>
+      <p>I am a software developer who loves to code! I have varied interests such as traveling, nature and antique automobiles. <br><br>I am a graduate of <a href="https://www.learncodinganywhere.com" target="_blank">The Tech Academy’s</a> Software Developer Boot Camp. Experienced in the following programming languages and web development tools: Python, C#, JavaScript, SQL, Django, HTML, CSS, .NET, and more. <br><br>I am a full-stack developer and would love to work with you on your project. You can view my latest <a href="Stylesheet/Images/Brian_Reeves_resume_2021 -V1.pdf">Résumé here</a> or <a href="#Contact">Contact</a> me below!</p>
     </div>
+  </div>
+
+  <!-- GitHub section -->
+  <div class="Row" id="GitHub">
+    <div class="Column_1">
+      <!-- Left column -->
+      <h1>GitHub</h1>
+      <p>
+        <center>
+          You can view my coding projects on my GitHub profile here:<br>
+          <a href="https://github.com/1949commander" target="_blank">Brian Reeves GitHub</a>
+        </center>
+      </p>
+    </div>
+
+    <div class="Column_2">
+      <!-- Right column -->
+      <a href="https://github.com/1949commander" target="_blank"><img src="Stylesheet/Images/GitHub.png" alt="GitHub"></a>
+    </div>
+  </div>
+
+  <!-- LinkedIn Section-->
+  <!-- Left column -->
+  <div class="Row" id="LinkedIn">
+    <div class="Column_2">
+      <a href="https://www.linkedin.com/in/brian-alan-reeves/" target="_blank"><img src="Stylesheet/Images/LI-In-Bug.png" alt="LinkedIn"></a>
+    </div>
+   <!-- Right column -->
+    <div class="Column_1">
+      <h1>LinkedIn</h1>
+      <p>
+        <center>
+        You can view more about me on my LinkedIn profile here:<br>
+        <a href="https://www.linkedin.com/in/brian-alan-reeves/" target="_blank">Brian Reeves LinkedIn</a>
+        </center>
+      </p>
+    </div>
+  </div>
 </div>
+
+
+
 
 <!-- Contact section revised 4/23/2020-->
 <div id="Contact"> 
